@@ -15,7 +15,8 @@ body{
     margin: 1vw;
     border-style: groove;
     border-color:white;
-    border-width: 1vw;
+    border-width: .5vw;
+    border-radius: 2vw 0px 2vw 0px;
 }
 #container{
     display: grid;
@@ -37,7 +38,7 @@ button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border-style: groove;
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+    border-radius: 1.5vw 0px 1.5vw 0px;
     border-color:var(--goodGray);
     margin: 2vw;
 }
