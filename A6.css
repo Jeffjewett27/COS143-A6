@@ -57,7 +57,8 @@ p{
     background: repeating-linear-gradient(white,var(--goodGray),var(--standardBlue),black,var(--standardBlue),var(--goodGray),white 50%)
 }
 
-p{
+a{
     color: white;
+    font-size: 3vw;
     margin: 1vw;
 }
