@@ -27,7 +27,7 @@ button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border-style: groove;
-    border-radius: 35% 0% 35% 0%;
+    border-radius: 25% 15% 25% 15%;
     border-color: white;
 }
 p{
