@@ -43,6 +43,6 @@ button{
     margin: 2vw;
 }
 p{
-    color: var(--standardBlue);
+    color: var(--goodGray);
     font-weight: bold;
 }
