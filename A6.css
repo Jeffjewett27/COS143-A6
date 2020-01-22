@@ -12,7 +12,9 @@ body{
     text-align: left;
     padding: 1vw;
     margin: 1vw;
-    border-style: none;
+    border-style: groove;
+    border-color: white;
+    border-width: 1vw;
 }
 #container{
     display: grid;
