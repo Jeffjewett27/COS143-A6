@@ -1,6 +1,8 @@
 function hideElement(elem) {
-    elem.setAttribute("visibility", "hidden");
+    hideShow.style.visibility = "hidden";
 }
 function showElement(elem) {
-    elem.setAttribute("visibility", "visible");
+    hideShow.style.visibility = "visible";
 }
+hideButton.addEventListener("click", hideElement);
+showButton.addEventListener("click", showElement);
