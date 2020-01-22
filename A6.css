@@ -25,7 +25,10 @@ button{
     color: rgb(11, 11, 61);
     background-color: rgb(200,200,200);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
     border-style: groove;
+    border-radius: 25% 15% 25% 15%;
+    border-color: white;
 }
 p{
     color: rgb(200,200,200);
