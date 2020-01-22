@@ -17,8 +17,12 @@ function duplicateButtonNow() {
     newButton.addEventListener("click", duplicateButtonNow);
     footer.appendChild(newButton);
 }
+function changeStyle() {
+    duplicationBox.classList.toggle("wonky");
+}
 hideButton.addEventListener("click", hideElement);
 showButton.addEventListener("click", showElement);
 addButton.addEventListener("click", addToList);
 duplicateButton.addEventListener("click", duplicateButtonNow);
 var numDuplicates = 1;
+changeButton.addEventListener("click", changeStyle);
