@@ -1,8 +1,8 @@
 h1{
-    color: rgb(200,200,200);
+    color: white;
     text-align: center;
     font-family: 'Cinzel', sans-serif;
-    text-shadow: 0px 4px 2px rgb(46, 43, 43);
+    text-shadow: 0px 4px 2px var(--standardBlue);
     font-size: 10vw;
 }
 body{
@@ -13,7 +13,7 @@ body{
     padding: 1vw;
     margin: 1vw;
     border-style: groove;
-    border-color: white;
+    border-color:var(--standardBlue);
     border-width: 1vw;
 }
 #container{
@@ -22,20 +22,21 @@ body{
 }
 :root{
 --standardBlue: rgb(6,6,117);
+--goodGray: rgb(200,200,200);
 }
 *{
-    background-color:var(--standardBlue);
+    background-color:var(--goodGray);
 }
 button{
     color: var(--standardBlue);
-    background-color:rgb(200,200,200);
+    background-color:var(--goodGray);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border-style: groove;
     border-radius: 1vw 2vw 1vw 2vw;
-    border-color: white;
+    border-color:var(--standardBlue);
     margin: 2vw;
 }
 p{
-    color: rgb(200,200,200);
+    color: var(--standardBlue);
 }
