@@ -29,6 +29,7 @@ body{
     background-color:var(--goodGray);
 }
 button{
+    padding: 1vw;
     color: var(--standardBlue);
     background-color:white;
     font-size: 2vw;
