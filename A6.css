@@ -26,7 +26,7 @@ body{
 --goodGray: rgb(200,200,200);
 }
 *{
-    background-color:var(--goodGray);
+    background-color:var(--standardBlue);
 }
 button{
     padding: 1vw;
@@ -38,7 +38,7 @@ button{
     font-weight: bold;
     border-style: groove;
     border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    border-color:var(--standardBlue);
+    border-color:var(--goodGray);
     margin: 2vw;
 }
 p{
