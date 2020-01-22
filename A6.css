@@ -35,7 +35,7 @@ button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border-style: groove;
-    border-radius: 1vw 2vw 1vw 2vw;
+    border-radius: 1vw 1vw 1vw 1vw;
     border-color:var(--standardBlue);
     margin: 2vw;
 }
