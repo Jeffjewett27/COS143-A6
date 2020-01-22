@@ -27,6 +27,7 @@ body{
     border-color:white;
     border-width: .5vw;
     border-radius: 2vw 0px 2vw 0px;
+    background-color: rgb(16,16,55);
 }
 #container{
     display: grid;
@@ -47,6 +48,18 @@ button{
     font-size: 2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-style: groove;
+    border-radius: 1.5vw 0px 1.5vw 0px;
+    border-color:var(--goodGray);
+    margin: 1vw;
+}
+button:hover{
+    padding: .75vw;
+    color: var(--standardBlue);
+    background-color: rbg(220,220,255);
+    border-width: .5vw;
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: inset;
     border-radius: 1.5vw 0px 1.5vw 0px;
     border-color:var(--goodGray);
     margin: 1vw;
