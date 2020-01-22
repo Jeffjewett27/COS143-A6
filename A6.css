@@ -56,3 +56,8 @@ p{
     border-width: .5vw;
     background: repeating-linear-gradient(white,var(--goodGray),var(--standardBlue),black,var(--standardBlue),var(--goodGray),white 50%)
 }
+
+p{
+    color: white;
+    margin: 1vw;
+}
