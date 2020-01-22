@@ -25,6 +25,7 @@ body{
 --goodGray: rgb(200,200,200);
 }
 *{
+    font-family: 'Cinzel', sans-serif;
     background-color:var(--goodGray);
 }
 button{
