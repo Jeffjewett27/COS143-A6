@@ -27,6 +27,7 @@ body{
     border-color:white;
     border-width: .5vw;
     border-radius: 2vw 0px 2vw 0px;
+    background-color: rgb(28,28,66);
 }
 #container{
     display: grid;
@@ -51,10 +52,23 @@ button{
     border-color:var(--goodGray);
     margin: 1vw;
 }
+button:hover{
+    padding: .75vw;
+    color: var(--standardBlue);
+    background-color: rgb(190,190,255);
+    border-width: .5vw;
+    font-size: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: inset;
+    border-radius: 1.5vw 0px 1.5vw 0px;
+    border-color:var(--goodGray);
+    margin: 1vw;
+}
 p{
     color: white;
     margin: 1vw;
     font-size: 1.5vw;
+    background-color: inherit;
 }
 #showoff{
 
@@ -72,4 +86,11 @@ a{
     color: white;
     font-size: 1.5vw;
     margin: 1vw;
+}
+li{
+    background-color: inherit;
+    color: white;
+    margin: 1vw;
+    font-size: 1.5vw;
+
 }
