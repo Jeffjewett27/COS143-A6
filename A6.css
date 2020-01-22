@@ -29,6 +29,7 @@ button{
     border-style: groove;
     border-radius: 1vw 2vw 1vw 2vw;
     border-color: white;
+    margin: 2vw;
 }
 p{
     color: rgb(200,200,200);
