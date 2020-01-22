@@ -36,7 +36,6 @@ button{
     border-width: .5vw;
     font-size: 2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
     border-style: groove;
     border-radius: 1.5vw 0px 1.5vw 0px;
     border-color:var(--goodGray);
@@ -44,5 +43,4 @@ button{
 }
 p{
     color: white;
-    font-weight: bold;
 }
