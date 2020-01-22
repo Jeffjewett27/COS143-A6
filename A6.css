@@ -21,7 +21,7 @@ body{
     grid-template-columns: 33% 34% 33%;
 }
 :root{
---standardBlue: var(rgb(6,6,117));
+--standardBlue: rgb(6,6,117);
 }
 *{
     background-color:radial-gradient(var(--standardBlue), black);
