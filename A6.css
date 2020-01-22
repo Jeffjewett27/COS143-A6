@@ -21,10 +21,10 @@ body{
     grid-template-columns: 33% 34% 33%;
 }
 *{
-    background-color: rgb(11, 11, 61);
+    background-color: rgb(36,36,112);
 }
 button{
-    color: rgb(11, 11, 61);
+    color: rgb(36, 36, 112);
     background-color: rgb(200,200,200);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
