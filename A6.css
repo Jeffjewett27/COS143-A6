@@ -45,3 +45,11 @@ p{
     color: white;
     margin: 1vw;
 }
+#showoff{
+    width: 80vw;
+    height: 80Vh;
+    border-style: groove;
+    border-radius: 1.5vw 0px 1.5vw 0px;
+    border-color:var(--goodGray);
+    border-width: .5vw;
+}
