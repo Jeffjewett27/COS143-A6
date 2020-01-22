@@ -103,3 +103,9 @@ a{
     border-radius: 2vw 3px 2vw 3px;
     background-color: lightcoral;
 }
+
+h3{
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+}
