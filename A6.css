@@ -54,5 +54,5 @@ p{
     border-radius: 1.5vw 0px 1.5vw 0px;
     border-color:var(--goodGray);
     border-width: .5vw;
-    background: repeating-linear-gradient(white,var(--standardBlue),black,var(--goodGray),black,var(--standardBlue),white 50%)
+    background: repeating-linear-gradient(white,var(--goodGray),var(--standardBlue),black,var(--standardBlue),var(--goodGray),white 50%)
 }
