@@ -16,7 +16,7 @@ body{
 }
 #container{
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 34% 33%;
 }
 *{
     background-color: rgb(11, 11, 61);
