@@ -24,6 +24,8 @@ body{
 button{
     color: rgb(11, 11, 61);
     background-color: rgb(200,200,200);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: groove;
 }
 p{
     color: rgb(200,200,200);
