@@ -24,7 +24,7 @@ body{
 --standardBlue: rgb(6,6,117);
 }
 *{
-    background-color:radial-gradient(var(--standardBlue), black);
+    background-color:var(--standardBlue);
 }
 button{
     color: var(--standardBlue);
