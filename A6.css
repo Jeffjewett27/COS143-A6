@@ -32,6 +32,7 @@ button{
     padding: 1vw;
     color: var(--standardBlue);
     background-color:white;
+    border-width: .5vw;
     font-size: 2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
