@@ -29,7 +29,7 @@ body{
 }
 button{
     color: var(--standardBlue);
-    background-color:var(--goodGray);
+    background-color:white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border-style: groove;
