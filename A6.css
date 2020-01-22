@@ -21,7 +21,7 @@ body{
     grid-template-columns: 33% 34% 33%;
 }
 *{
-    background-color:radial-gradient(rgb(6,6,117), black) ;
+    background-color:radial-gradient((rgb(6,6,117)), black);
 }
 button{
     color: rgb(6, 6, 117);
