@@ -15,7 +15,7 @@ function duplicateButtonNow() {
     newButton.id = "duplicateButton" + numDuplicates++;
     newButton.innerHTML = "Duplicate";
     newButton.addEventListener("click", duplicateButtonNow);
-    duplicationBox.appendChild(newButton);
+    footer.appendChild(newButton);
 }
 hideButton.addEventListener("click", hideElement);
 showButton.addEventListener("click", showElement);
