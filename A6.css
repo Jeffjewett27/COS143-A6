@@ -21,3 +21,6 @@ body{
 *{
     background-color: rgb(11, 11, 61)
 }
+button{
+    background-color: rgb(200,200,200);
+}
