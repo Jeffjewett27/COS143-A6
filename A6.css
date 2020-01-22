@@ -3,7 +3,7 @@ h1{
     text-align: center;
     font-family: 'Cinzel', sans-serif;
     font-weight: bold;
-    text-shadow: 0px 4px 2px var(--standardBlue);
+    text-shadow: 0px 4px 2px var(--goodGray);
     font-size: 10vw;
 }
 body{
@@ -23,7 +23,7 @@ body{
     grid-template-columns: 33% 34% 33%;
 }
 :root{
---standardBlue: rgb(6,6,117);
+--standardBlue: rgb(8, 8, 46);
 --goodGray: rgb(200,200,200);
 }
 *{
@@ -43,6 +43,6 @@ button{
     margin: 2vw;
 }
 p{
-    color: var(--goodGray);
+    color: white;
     font-weight: bold;
 }
