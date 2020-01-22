@@ -14,7 +14,7 @@ body{
     padding: 1vw;
     margin: 1vw;
     border-style: groove;
-    border-color:var(--standardBlue);
+    border-color:white;
     border-width: 1vw;
 }
 #container{
@@ -36,7 +36,7 @@ button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     border-style: groove;
-    border-radius: 1vw 1vw 1vw 1vw;
+    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
     border-color:var(--standardBlue);
     margin: 2vw;
 }
