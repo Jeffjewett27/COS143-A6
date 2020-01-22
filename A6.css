@@ -2,6 +2,7 @@ h1{
     color: white;
     text-align: center;
     font-family: 'Cinzel', sans-serif;
+    font-weight: bold;
     text-shadow: 0px 4px 2px var(--standardBlue);
     font-size: 10vw;
 }
@@ -39,4 +40,5 @@ button{
 }
 p{
     color: var(--standardBlue);
+    font-weight: bold;
 }
