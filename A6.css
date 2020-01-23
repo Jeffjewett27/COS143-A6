@@ -116,12 +116,12 @@ h3{
 #login{
     
     margin:auto;
-    width:94vw;
+    width:31%;
     border-style: groove;
     border-color:var(--goodGray);
     border-width: .5vw;
     background-color: rgb(28,28,66);
-    margin-bottom:1vw;
+    margin-bottom:3vw;
 }
 #box{
     border: none;
@@ -131,6 +131,9 @@ h3{
     border-color:var(--goodGray);
     border-width: .3vw;
     margin:1vw;
+    width: 20vw;
+    font-size: 1.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 #login input:focus{
@@ -147,11 +150,22 @@ h3{
 .invalid{
     background-color: lightcoral;
     color: red;
+    border-style: solid;
     border-color:red;
     }
+
+}
 #submit{
     font-size: 1vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color:white;
     color:var(--standardBlue);
+}
+.inputContainer{
+    display:inline;
+    margin:auto;
+}
+.errorMessage{
+    font-size: 1.5vw;
+    margin: auto;
 }
