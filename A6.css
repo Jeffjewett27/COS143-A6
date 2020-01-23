@@ -13,7 +13,7 @@ h2{
     text-align: center;
     font-family: 'Cinzel', sans-serif;
     font-weight: bold;
-    text-shadow: 0px 3px 2px var(--goodGray);
+    text-shadow: 0px 1px 2px var(--goodGray);
     font-size: 2vw;
 }
 body{
