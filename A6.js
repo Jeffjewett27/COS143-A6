@@ -31,6 +31,8 @@ function validateUsername(event) {
     var val = username.value;
     var valid = true;
     var count = 0;
+    var errorMessage = "";
+    var blurSubmit = true;
     for (let c in val) {
         let code = val.charCodeAt(c);
         let alphanum = (code > 47 && code < 58) || //numeric
@@ -38,14 +40,16 @@ function validateUsername(event) {
             (code > 96 && code < 123); //lowercase
         if (!alphanum) {
             valid = false;
+            errorMessage = "Username can only contain a-z, A-Z, and 0-9 characters";
         }
         count++;
     }
-    if (event.target.type == "submit" && val.length < 3 || val.length > 5) {
+    if (blurSubmit && val.length < 3 || val.length > 5) {
         valid = false;
+        errorMessage = "Username must be 3-5 characters long";
     }
     if (valid) {
-        if (event.target.type == "submit") {
+        if (blurSubmit) {
             username.classList.add("valid");
         }
         username.classList.remove("invalid");
@@ -53,14 +57,17 @@ function validateUsername(event) {
         username.classList.add("invalid");
         username.classList.remove("valid");
     }
+    userError.innerHTML = errorMessage;
     return valid;
 }
 function validatePassword(event) {
     var val = password.value;
-    var valid = false;
+    var valid = true;
     var count = 0;
     var containsUpper = false;
     var containsLower = false;
+    var errorMessage="";
+    var blurSubmit = true;
     for (let c in val) {
         let code = val.charCodeAt(c);
         if (code > 64 && code < 91) {
@@ -72,22 +79,28 @@ function validatePassword(event) {
         count++;
         console.log(code + ", " + containsLower + ", " + containsUpper);
     }
-    valid = containsLower && containsUpper;
+    if (!containsUpper || ! containsLower) {
+        valid = false;
+        errorMessage = "Password must contain an uppercase and a lowercase letter";
+    }
     if (val.length < 3 || val.length > 5) {
         valid = false;
+        errorMessage = "Password must be 3-5 characters long";
     }
     console.log(event)
     if (valid) {
         password.classList.add("valid");
+        passError.innerHTML = errorMessage;
         password.classList.remove("invalid");
-    } else {
+    } else if (blurSubmit){
         password.classList.add("invalid");
         password.classList.remove("valid");
+        passError.innerHTML = errorMessage;
     }
     return valid;
 }
 function validateSubmission(event) {
-    console.log("submit");
+    console.dir(event);
     let userValid = validateUsername(event);
     let passValid = validatePassword(event);
     console.log(passValid);
@@ -105,4 +118,7 @@ var numDuplicates = 1;
 changeButton.addEventListener("click", changeStyle);
 showoff.addEventListener("mousemove", changeShowoff);
 username.addEventListener("input", validateUsername);
+password.addEventListener("input", validatePassword);
+username.addEventListener("blur", validateUsername);
+password.addEventListener("blur", validatePassword);
 login.addEventListener("submit", validateSubmission);

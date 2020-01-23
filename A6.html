@@ -11,10 +11,16 @@
         <h1 id="top">Assignment 6</h1>
         <h2>This Just Felt Like It Needed A Subheading</h2>
         
-        <form id="login">
+        <form id="login" action="https://cse.taylor.edu/~cos143/echoForm.php" method="GET">
             <fieldset id="box">
-                <input type="text" id="username" minlength="3" maxlength="5" placeholder="Username" name="username">
-                <input type="password" id="password" minlength="3" maxlength="5" placeholder="Password" name="password">
+                <div id="usernameBox">
+                    <input type="text" id="username" maxlength="5" placeholder="Username" name="username">
+                    <p id="userError"></p>
+                </div>
+                <div id="passwordBox">
+                    <input type="password" id="password" maxlength="5" placeholder="Password" name="password">
+                    <p id="passError"></p>
+                </div>
                 <input type="submit" id="submit" >
             </fieldset>
         </form>
