@@ -40,12 +40,10 @@ function validateUsername(event) {
             valid = false;
         }
         count++;
-        console.log(c + ", " + alphanum);
     }
     if (event.target.type == "submit" && val.length < 3 || val.length > 5) {
         valid = false;
     }
-    console.log(event)
     if (valid) {
         if (event.target.type == "submit") {
             username.classList.add("valid");
@@ -55,14 +53,45 @@ function validateUsername(event) {
         username.classList.add("invalid");
         username.classList.remove("valid");
     }
-    console.dir(username);
+    return valid;
+}
+function validatePassword(event) {
+    var val = password.value;
+    var valid = false;
+    var count = 0;
+    var containsUpper = false;
+    var containsLower = false;
+    for (let c in val) {
+        let code = val.charCodeAt(c);
+        if (code > 64 && code < 91) {
+            containsUpper = true;
+        } //capital
+        if (code > 96 && code < 123) {
+            containsLower = true;
+        } //lowercase
+        count++;
+        console.log(code + ", " + containsLower + ", " + containsUpper);
+    }
+    valid = containsLower && containsUpper;
+    if (val.length < 3 || val.length > 5) {
+        valid = false;
+    }
+    console.log(event)
+    if (valid) {
+        password.classList.add("valid");
+        password.classList.remove("invalid");
+    } else {
+        password.classList.add("invalid");
+        password.classList.remove("valid");
+    }
     return valid;
 }
 function validateSubmission(event) {
     console.log("submit");
     let userValid = validateUsername(event);
-    console.log(userValid);
-    if (userValid) {
+    let passValid = validatePassword(event);
+    console.log(passValid);
+    if (userValid && passValid) {
         alert("submitted");
     } else {
         event.preventDefault();
@@ -76,5 +105,4 @@ var numDuplicates = 1;
 changeButton.addEventListener("click", changeStyle);
 showoff.addEventListener("mousemove", changeShowoff);
 username.addEventListener("input", validateUsername);
-submit.addEventListener("submit", validateSubmission);
-submit.addEventListener("click", validateSubmission);
+login.addEventListener("submit", validateSubmission);
