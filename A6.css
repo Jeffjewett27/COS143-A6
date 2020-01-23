@@ -138,6 +138,7 @@ color: green;
     border-color:white;
     border-width: .5vw;
     margin:1vw;
+    background-color:var(--goodGray)
 }
 #login input:focus{
     border-style: groove;
