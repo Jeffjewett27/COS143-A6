@@ -118,7 +118,7 @@ h3{
     margin:auto;
     width:94vw;
     border-style: groove;
-    border-color:white;
+    border-color:var(--goodGray);
     border-width: .5vw;
     background-color: rgb(28,28,66);
     margin-bottom:1vw;
@@ -128,8 +128,8 @@ h3{
 }
 #login input{
     border-style: groove;
-    border-color:white;
-    border-width: .5vw;
+    border-color:var(--goodGray);
+    border-width: .3vw;
     margin:1vw;
     
 }
