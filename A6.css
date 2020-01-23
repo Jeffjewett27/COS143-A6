@@ -112,14 +112,7 @@ h3{
     text-align: center;
     color: white;
 }
-.valid{
-background-color: lightgreen;
-color: green;
-}
-.invalid{
-    background-color: lightcoral;
-    color: red;
-}
+
 #login{
     
     margin:auto;
@@ -146,3 +139,12 @@ color: green;
     border-width: .5vw;
     margin:1vw;
 }
+
+.valid{
+    background-color: lightgreen;
+    color: green;
+    }
+    .invalid{
+        background-color: lightcoral;
+        color: red;
+    }
