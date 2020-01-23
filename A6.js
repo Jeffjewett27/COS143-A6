@@ -32,28 +32,39 @@ function validateUsername(event) {
     var valid = true;
     var count = 0;
     for (let c in val) {
-        let alphanum = (c > 47 && c < 58) && //numeric
-            (c > 64 && c < 91) && //capital
-            (c > 96 && c < 123); //lowercase
+        let code = val.charCodeAt(c);
+        let alphanum = (code > 47 && code < 58) || //numeric
+            (code > 64 && code < 91) || //capital
+            (code > 96 && code < 123); //lowercase
         if (!alphanum) {
             valid = false;
         }
         count++;
         console.log(c + ", " + alphanum);
     }
-    if (val.length < 3 || val.length > 5) {
+    if (event.target.type == "submit" && val.length < 3 || val.length > 5) {
         valid = false;
     }
+    console.log(event)
     if (valid) {
-        username.classList.add("valid");
+        if (event.target.type == "submit") {
+            username.classList.add("valid");
+        }
         username.classList.remove("invalid");
     } else {
         username.classList.add("invalid");
         username.classList.remove("valid");
     }
     console.dir(username);
+    return valid;
 }
-console.log("test");
+function validateSubmission(event) {
+    console.log("submit");
+    let userValid = validateUsername(event);
+    if (userValid) {
+        alert("submitted");
+    }
+}
 hideButton.addEventListener("click", hideElement);
 showButton.addEventListener("click", showElement);
 addButton.addEventListener("click", addToList);
@@ -62,3 +73,4 @@ var numDuplicates = 1;
 changeButton.addEventListener("click", changeStyle);
 showoff.addEventListener("mousemove", changeShowoff);
 username.addEventListener("input", validateUsername);
+submit.addEventListener("submit", validateSubmission);
