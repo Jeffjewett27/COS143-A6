@@ -61,8 +61,11 @@ function validateUsername(event) {
 function validateSubmission(event) {
     console.log("submit");
     let userValid = validateUsername(event);
+    console.log(userValid);
     if (userValid) {
         alert("submitted");
+    } else {
+        event.preventDefault();
     }
 }
 hideButton.addEventListener("click", hideElement);
@@ -74,3 +77,4 @@ changeButton.addEventListener("click", changeStyle);
 showoff.addEventListener("mousemove", changeShowoff);
 username.addEventListener("input", validateUsername);
 submit.addEventListener("submit", validateSubmission);
+submit.addEventListener("click", validateSubmission);
