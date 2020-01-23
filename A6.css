@@ -119,5 +119,29 @@ color: green;
 .invalid{
     background-color: lightcoral;
     color: red;
-
+}
+#login{
+    
+    margin:auto;
+    width:94vw;
+    border-style: groove;
+    border-color:white;
+    border-width: .5vw;
+    background-color: rgb(28,28,66);
+    margin-bottom:1vw;
+}
+#box{
+    border: none;
+}
+#login input{
+    border-style: groove;
+    border-color:white;
+    border-width: .5vw;
+    margin:1vw;
+}
+#login input:focus{
+    border-style: groove;
+    border-color: rgb(210,210,255);
+    border-width: .5vw;
+    margin:1vw;
 }
