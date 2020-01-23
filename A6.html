@@ -13,14 +13,14 @@
         
         <form id="login" action="https://cse.taylor.edu/~cos143/echoForm.php" method="GET">
             <fieldset id="box">
-                <div id="usernameBox">
+                <span id="usernameBox" class="inputContainer">
                     <input type="text" id="username" maxlength="5" placeholder="Username" name="username">
-                    <p id="userError"></p>
-                </div>
-                <div id="passwordBox">
+                    <p id="userError" class="errorMessage"></p>
+                </span>
+                <span id="passwordBox" class="input container">
                     <input type="password" id="password" maxlength="5" placeholder="Password" name="password">
-                    <p id="passError"></p>
-                </div>
+                    <p id="passError" class="errorMessage"></p>
+                </span>
                 <input type="submit" id="submit" >
             </fieldset>
         </form>
@@ -47,14 +47,14 @@
         
         <div id="footer">
             
-            <button type="button" id="addButton">Add content</button>
-            <button type="button" id="hideButton">Hide</button>
-            <button type="button" id="showButton">Show</button>
-            <button type="button" id="changeButton">Change Style</button>
-            <button type="button" id="duplicateButton">Duplicate</button>
+            <button type="button" id="addButton">1. Add content</button>
+            <button type="button" id="hideButton">2. Hide</button>
+            <button type="button" id="showButton">3. Show</button>
+            <button type="button" id="changeButton">4. Change Style</button>
+            <button type="button" id="duplicateButton">5. Duplicate</button>
         </div>
         <div>
-                <a href="http://cse.taylor.edu/~lseeman/COS143-A6/A6.html#top">Fly, you fools!</a>
+                <a href="#">Fly, you fools!</a>
         </div>
         <script src="A6.js"></script>
     </body>

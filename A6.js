@@ -6,14 +6,14 @@ function showElement(elem) {
 }
 function addToList() {
     var node = document.createElement("li");
-    var textnode = document.createTextNode("Water");
+    var textnode = document.createTextNode("Content");
     node.appendChild(textnode);
     contentList.appendChild(node);  
 }
 function duplicateButtonNow() {
     var newButton = duplicateButton.cloneNode(false);
     newButton.id = "duplicateButton" + numDuplicates++;
-    newButton.innerHTML = "Duplicate";
+    newButton.innerHTML = "5. Duplicate";
     newButton.addEventListener("click", duplicateButtonNow);
     footer.appendChild(newButton);
 }
@@ -77,7 +77,6 @@ function validatePassword(event) {
             containsLower = true;
         } //lowercase
         count++;
-        console.log(code + ", " + containsLower + ", " + containsUpper);
     }
     if (!containsUpper || ! containsLower) {
         valid = false;
@@ -87,7 +86,6 @@ function validatePassword(event) {
         valid = false;
         errorMessage = "Password must be 3-5 characters long";
     }
-    console.log(event)
     if (valid) {
         password.classList.add("valid");
         passError.innerHTML = errorMessage;
@@ -100,12 +98,10 @@ function validatePassword(event) {
     return valid;
 }
 function validateSubmission(event) {
-    console.dir(event);
     let userValid = validateUsername(event);
     let passValid = validatePassword(event);
-    console.log(passValid);
     if (userValid && passValid) {
-        alert("submitted");
+        
     } else {
         event.preventDefault();
     }
