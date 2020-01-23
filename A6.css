@@ -131,7 +131,7 @@ h3{
     border-color:white;
     border-width: .5vw;
     margin:1vw;
-    background-color:var(--goodGray)
+    
 }
 #login input:focus{
     border-style: groove;
@@ -144,7 +144,14 @@ h3{
     background-color: lightgreen;
     color: green;
     }
-    .invalid{
-        background-color: lightcoral;
-        color: red;
+.invalid{
+    background-color: lightcoral;
+    color: red;
+    border-color:red;
     }
+#submit{
+    font-size: 1vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:white;
+    color:var(--standardBlue);
+}
